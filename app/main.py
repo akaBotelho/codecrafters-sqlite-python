@@ -1,5 +1,4 @@
 import sys
-
 from dataclasses import dataclass
 
 # import sqlparse - available if you need it!
@@ -13,8 +12,8 @@ if command == ".dbinfo":
         print("Logs from your program will appear here!", file=sys.stderr)
 
         # TODO: Uncomment the code below to pass the first stage
-        # database_file.seek(16)  # Skip the first 16 bytes of the header
-        # page_size = int.from_bytes(database_file.read(2), byteorder="big")
-        # print(f"database page size: {page_size}")
+        database_file.seek(16)  # Skip the first 16 bytes of the header
+        page_size = int.from_bytes(database_file.read(2), byteorder="big")
+        print(f"database page size: {page_size}")
 else:
     print(f"Invalid command: {command}")

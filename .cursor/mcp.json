@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "datamate": {
+      "type": "stdio",
+      "command": "/home/botelho/.cursor-server/bin/042b3c1a4c53f2c3808067f519fbfc67b72cad80/node",
+      "args": [
+        "/home/botelho/.cursor-server/extensions/altimateai.vscode-altimate-mcp-server-0.8.4-linux-x64/dist/datamate-cli.js",
+        "start-stdio"
+      ],
+      "env": {
+        "ALTIMATE_EXTENSION_RPC": "/tmp/altimate-mcp-38927.sock",
+        "ELECTRON_RUN_AS_NODE": "1"
+      },
+      "updatedAt": "2026-07-05T14:14:00.552Z"
+    }
+  }
+}
